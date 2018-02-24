@@ -1,7 +1,7 @@
 const { events, Job } = require('brigadier');
 
-events.on('push', function(e, project) {
-  console.log('received push for commit ' + e.commit);
+events.on('pull_request', function(e, project) {
+  console.log('received pull_request for commit ' + e.commit);
   console.log(JSON.stringify(e));
   console.log(JSON.stringify(project));
   var job = new Job('hello', 'alpine:3.4');
