@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replijhjcas: 2
+  replijhddjcas: 2
   template:
     metadata:
       labels:
